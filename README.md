@@ -35,8 +35,8 @@ python tools/train.py configs_nwdrka/tecr/aitodv2_cascade_r50_tecr.py
 ```
 
 The dataset and pretrained ResNet-50 path must be configured in the host
-AI-TOD-v2 fork. For the recorded two-GPU experiment, use 2 images per GPU
-(global batch 4), 800 × 800 maximum input, SGD with learning rate 0.02, and
+AI-TOD-v2 fork. For the recorded two-GPU experiment, use 4 images per GPU
+(global batch 8), 800 × 800 maximum input, SGD with learning rate 0.02, and
 the inherited 12-epoch schedule. The exported config preserves the neck and
 optimizer settings; the remaining detector, dataset, and runtime settings
 come from the host baseline config.
